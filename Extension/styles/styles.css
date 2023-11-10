@@ -1,0 +1,147 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');*/
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(chrome-extension://__MSG_@@extension_id__/styles/fonts/Comfortaa-Medium.woff2) format('woff2');
+}
+body {
+    overflow-y: auto;
+}
+#modelLoading {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+#nudeometer {
+    font-family: 'Comfortaa', cursive;
+    font-size: 25px;
+    background-color: white;
+    padding: 5px;
+    z-index: 110;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+#autoSkipNotifier {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+}
+#autoSkipTimer {
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 960%;
+    position: absolute;
+    z-index: 111;
+    border: 4px solid rgb(63, 63, 63);
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+#autoSkipTimerText{
+    height: 15px;
+    width: 96%;
+    position: fixed;
+    margin: 10px;
+    top: 72px;
+    border: 4px solid rgb(63, 63, 63);
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+#dontSkipTimer {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+    display: inline-block;
+}
+@keyframes autoSkipKeyframe {
+    from {
+        background-color: #16E956;
+        width: 96%;
+    }
+    to {
+        background-color: #e7181d;
+        width: 0%;
+    }
+}
+#otherVideo{
+    cursor: pointer;
+}
+#quickOptions{
+    margin: 25px;
+}
+#markBTN {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+}
+.logbox .botReportButton {
+    font-size: 22px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    text-align: center;
+    width: 300px;
+    user-select: none;
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+.logbox .botReportButton:hover {
+    animation-name: shadow;
+    animation-duration: 0.2s;
+    box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+}
+.extraBTN{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size:1em;
+    background:transparent;
+    width:7em;
+    height:5em;
+    padding:0;
+    margin:0;
+    border:0 none;
+}
+.extraBTN .botBtnTxt {
+    top: -3px;
+    position: relative;
+}
+.extraBTN .botBtnInfo {
+    position: relative;
+    color: #252525;
+}
+.extraBTNwrapper {
+    overflow:hidden;
+    margin-right:.5em;
+    border:1px solid #CCC;
+    background:#fff
+}
+@keyframes shadow {
+    from {box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.3);}
+    to {box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);}
+  }
+
+#popupIframe {
+    height: 600px;
+    width: 381px;/* These are static and the popup window cannot be changed */
+    border-radius: .5em;
+}

@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #4E75B1;
+}
+.title {
+    font-size: 22px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    width: 300px;
+    user-select: none;
+}
+#backButton {
+  display: none;
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 50px;
+  width: 300px;
+  user-select: none;
+  cursor: pointer;
+}
+.defaultSettingsBTN {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 50px;
+  user-select: none;
+  cursor: pointer;
+}
+.introText {
+    font-size: 16px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 20px;
+    width: 300px;
+}
+.textSettings {
+  display: none;
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #4B9AE7;
+  border: 4px solid #FFFFFF;
+  border-radius: 50px;
+}
+.videoSettings {
+    display: none;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #4B9AE7;
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+}
+.option {
+    text-align: left;
+    margin: 5px;
+    padding: 8px;
+    border: 3px solid #FFFFFF;
+    background-color: rgb(155, 203, 251);
+    border-radius: 20px;
+}
+.option .name {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+.option .description {
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+.option .vars {
+    font-size: 18px;
+    padding: 5px;
+    border: 5px solid rgb(207, 229, 250);
+    border-radius: 20px;
+}
+.option .vars .textInput {
+  padding: 5px;
+  margin: 5px;
+  width: 100%;
+}
+.option .vars .optName {
+    font-size: 15px;
+    padding: 3px;
+}
+.switch {
+    margin: 5px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 18px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 18px;
+  }
+  
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .toggle {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+  }
+  
+  
+/* Slider */
+
+.slidecontainer {
+    width: 100%;
+  }
+  .slider {
+    -webkit-appearance: none;
+    margin: 5px;
+    width: 95%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+  }
+
+.infoTable {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border-spacing: 10 10px;
+  user-select: none;
+}
+.infoTable td {
+  width: 50%;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  font-size: 17px;
+  cursor: pointer;
+}
+.infoTable td:hover {
+  background-color: rgb(194, 221, 248);
+}
+.info {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 20px;
+  width: 300px;
+  display: none;
+}
+.info a {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.howToUse {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 20px;
+  text-align: left;
+  width: 300px;
+  display: none;
+}
+.howToUse h2 {
+  text-decoration: underline;
+  margin: 5px;
+  font-size: 18px;
+}
+.donate {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 20px;
+  width: 300px;
+  display: none;
+}
+.botMessages {
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 20px;
+  width: 300px;
+  display: none;
+}
+#idealsDonateLink {
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(155, 203, 251);
+  border: 4px solid #FFFFFF;
+  border-radius: 50px;
+  user-select: none;
+  cursor: pointer;
+}
+#idealsDonateLink:hover {
+  animation-name: shadow;
+  animation-duration: 0.2s;
+  box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);
+}
+
+@keyframes shadow {
+  from {box-shadow: 10px 10px 24px -2px rgba(0,0,0,0);}
+  to {box-shadow: 10px 10px 24px -2px rgba(0,0,0,0.75);}
+}

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/popup.css">
+        <script src="JS/extensionUI/options.js"></script>
+    </head>
+    <body>
+        <div class="title">Cock Blocker</div>
+        <div id="backButton" class="backButton">Back</div>
+        <table class="infoTable">
+            <tr>
+                <td id="videoSettingsButton">
+                    Video Settings
+                </td>
+                <td id="textSettingsButton">
+                    Text Settings
+                </td>
+            </tr>
+            <tr>
+                <td id="infoButton">
+                    Info
+                </td>
+                <td id="donateButton">
+                    Donate
+                </td>
+            </tr>
+            <tr>
+                <td id="howToUseButton">
+                    How To Use
+                </td>
+                <!--<td id="botMessagesButton">
+                    Bot Messages
+                </td> -->
+            </tr>
+        </table>
+        <div class="introText">Cock Blocker is a browser extension that uses machine learning to skip nudity on omegle, male and female. Machine learning isn't perfect so there is a manual override if it does get it wrong. The timeout and thresholds can be adjusted in the settings.<br><br>
+            All image data is currently processed locally
+            <br> Bot Skipping Coming Soon! (for text)
+
+        </div>
+        
+        <div class="videoSettings">
+            Video Settings:
+        <br>
+        </div>
+        <div class="textSettings">
+            Text Settings:
+        <br>
+        </div>
+        <div class="info">
+            This extension was made my me (an originally 17 year old computer science student, now 19!). Omegle can be a great place to talk to random people and I liked it for that, however there were way too many penises that I had to skip through to speak to normal people, so I decided to make this to make the experience better. It took a few weeks to design and create, and a few months prior of browsing the source code of omegle to see what did what and to learn about the web technologies it uses. 
+            <br><br>This was initially made in the coronavirus lockdown period.<br><br>
+            Nudity Detection Library used:
+            <a id="nsfwJSlink"><br>NFSW JS</a><br><br>
+            Nudity Detection Model:
+            <a id="modelLink"><br>mobilenet_v2_140_224</a>
+            <br>
+            <br>
+            Anti-masturbatory messages, sent on autoskip:<br><br>
+            <a id="iSawYourWilly">NSPCC: I saw your willy</a><br><br>
+            <a id="noToNonces">Callum Adams - NO NONCESENSE</a>
+            <a id="sexOffenderShuffle">Sex Offender Shuffle</a>
+        </div>
+        <div class="donate">
+            <!-- Donations are not necessary but as a student, it's always nice to see them. I had to see all those dicks while testing so you dont have to! (as much... not quite perfect)
+            <br> I'll try to keep the extension updated and with donations it would be easier to justify spending time on it. -->
+            Donations are not nessasary but welcomed and don't go to me at this time <br><br>
+            Ideals is a charity that does amazing work saving lives in war torn areas such as Palestine
+            
+            <div id="idealsDonateLink">Donate!</div>
+        </div>
+        <div class="howToUse">
+            <h2>The Basics:</h2>
+            <br>
+            This works by processing images and giving them a "nudity score" from -100 to 100 (if everything works as it should).
+            <br><br>
+            When the score goes over a Threshold, it will activate the setting, all thresholds can be adjusted in the settings.
+            <br><br>
+            If you want to manually confirm that someone isn't *in the nude* you can click on their video or the button to say so, this will make them not be skipped
+            <br><br>
+            If someone is going to be automatically skipped, there will be a bar above their video which goes down to indicate when they are going to be skipped
+        </div>
+        <!--<div class="botMessages">
+            <h1>hi</h1>
+        </div> -->
+        <script src="JS/extensionUI/popup.js"></script>
+    </body>
+</html>

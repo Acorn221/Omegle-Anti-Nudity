@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    background-color: #4E75B1;
+}
+.title {
+    font-size: 48px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #4B9AE7;
+    border: 9px solid #FFFFFF;
+    border-radius: 50px;
+}
+.settings {
+    font-size: 38px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #4B9AE7;
+    border: 9px solid #FFFFFF;
+    border-radius: 50px;
+}
+.settings .option {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #FFFFFF;
+    background-color: rgb(155, 203, 251);
+    border-radius: 20px;
+}
+.settings .option .name {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 10px;
+}
+.settings .option .description {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.settings .option .vars {
+    font-size: 18px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 5px solid rgb(207, 229, 250);
+    border-radius: 20px;
+}
+.settings .option .vars .optName {
+    padding: 5px;
+}
+.switch {
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .toggle:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .toggle {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .toggle {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .toggle:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  
+/* Slider */
+
+.slidecontainer {
+    width: 100%;
+  }
+  .slider {
+    -webkit-appearance: none;
+    margin-top: 15px;
+    width: 95%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #2196F3;
+    cursor: pointer;
+  }
+.defaultSettingsBTN {
+    font-size: 28px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(155, 203, 251);
+    border: 4px solid #FFFFFF;
+    border-radius: 50px;
+    user-select: none;
+    cursor: pointer;
+}
+.messages {
+  font-size: 38px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #4B9AE7;
+  border: 9px solid #FFFFFF;
+  border-radius: 50px;
+}
+
+.messages .reportedMessages {
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  border: 5px solid #FFFFFF;
+  background-color: rgb(155, 203, 251);
+  border-radius: 20px;
+  position: relative;
+  padding-top: 20px;
+}
+.messages .reportedMessages .expandButton {
+  text-align: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 50%;
+  background-color: #4B9AE7;
+  display: inline-block;
+  padding: 5px;
+  height: 24px;
+  width: 24px;
+  border: 2px solid #ffffff;
+  box-shadow: 0px 0px 35px -13px rgba(0,0,0,1);
+  margin: 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.messages .reportedMessages .local {
+  margin: 5px;
+  font-size: 24px;
+  display: inline;
+}
+.messages .reportedMessages .toggleContainer {
+  font-size: 24px;
+  display: inline-flex;
+}
+.messages .reportedMessages .toggleContainer .optName {
+  display: inline-block;
+  margin-left: 15px;
+}
+.messages .reportedMessages .toggleContainer .switch {
+  display: inline-block;
+  position: relative;
+  top: -12px;
+}
+.messages .reportedMessages .expandButton p {
+  display: block;
+  position: relative;
+  top: -6px;
+  left: -4px;
+  margin: auto;
+  width: 50%;
+}
+.messages .reportedMessages .messagesContainer {
+  margin: 5px;
+  padding: 5px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 35px -13px rgba(0,0,0,0.75);
+}
+.messages .reportedMessages .messagesContainer .message {
+  display: block;
+  font-size: 18px;
+  border: 2px solid #FFFFFF;
+  margin: 2px;
+  border-radius: 5px;
+  padding: 3px;
+}
